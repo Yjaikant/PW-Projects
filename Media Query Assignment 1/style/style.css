@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(65, 245, 245);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.large-screen,.laptop,.tablet,.mobile{
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:1440px){
+    body{
+        background-color: rgb(14, 146, 14);
+
+    }
+    .laptop,.tablet,.mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+    body{
+        background-color: rgb(200, 160, 27);
+    }
+    h1{
+        font-size: 45px;
+    }
+    .large-screen,.tablet,.mobile{
+        display: none;
+    }
+    .laptop{
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(146, 246, 213);
+    }
+    h1{
+        font-size: 35px;
+    }
+    .large-screen,.laptop,.mobile{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and (max-width:425px){
+    body{
+        background-color: rgb(171, 46, 46);
+    }
+    h1{
+        font-size: 20px;
+    }
+    .large-screen,.tablet,.laptop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
