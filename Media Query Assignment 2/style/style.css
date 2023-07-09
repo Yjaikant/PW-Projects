@@ -1,0 +1,234 @@
+*{
+    background-color: #111827;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #111827;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+}
+.navbar img:nth-child(2){
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgb(153, 237, 180);
+    color: #111827;
+    font-weight: 900;
+}
+
+.navSearch {
+    /* margin: 5px 10px 5px 20px; */
+    /* border: 2px solid white; */
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    margin: 12px ;
+    border-radius: 2px;
+    /* border: 1px solid wheat; */
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: rgb(234, 255, 214);
+}
+button{
+    background-color: #111827;
+    /* border:1px solid wheat; */
+    color: white;
+    font-size: 20px;
+    padding: 8px 24px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin:8px;
+}
+
+button:hover{
+    background-color: rgb(28, 117, 207);
+    border: none;
+}
+/*---------- Main Section---------- */
+section{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -----------Left-Section------------- */
+.left-section{
+    /* border: 2px solid black; */
+    width: 30%;
+    margin-left: 180px;
+    line-height: 37px;
+}
+.left-section h1 {
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.left-section p {
+    color: rgb(238, 189, 11);
+    font-size: 18px;
+}
+.left-section img{
+    width: 25px;
+}
+
+/* ----------Right Section----------- */
+.right-section {
+    width:50%;
+}
+.right-section img{
+    /* border: 2px solid black; */
+    width: 550px;
+}
+
+/* --------End Section ----------- */
+.header-heading h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(33, 40, 245);
+    text-decoration-style: solid;
+    font-size: 28px;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.end-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.upper-div{
+    display: flex;
+}
+.upper-div div{
+    width: 350px;
+    height: 300px;
+    /* border: 2px solid white; */
+    margin-top: 20px;
+}
+.upper-div img{
+    width: 300px;
+    height: 300px;
+    padding: 10px 20px 10px 30px;
+}
+
+.lower-div{
+    display: flex;
+}
+.lower-div div{
+    width: 350px;
+    height: 300px;
+    /* border: 2px solid white; */
+}
+.lower-div img{
+    width: 300px;
+    height: 300px;
+    padding: 10px 20px 10px 30px;
+}
+ 
+/* --------footer---------- */
+.footer-heading{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(33, 40, 245);
+    text-decoration-style: solid;
+    font-size: 25px;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.social  {
+    padding: 10px;
+    text-align: center;
+}
+
+.social a:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+/* --Lets make it Mobile friendly using media queries-- */
+
+@media screen and (max-width:425px){
+
+    /*-----Navbar------- */
+   .navbar img:nth-child(1),ul,input,button{
+    display: none;
+   }
+   
+   .navbar img:nth-child(2){
+    display: block;
+   }
+/* -------Main Section------ */
+   section{
+    flex-direction: column;
+   }
+
+   .left-section {
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 280px;
+   }
+
+   .right-section img{
+    /* border: 2px solid white; */
+    width: 500px;
+    margin-left: -70px;
+    }
+/* -------End Section------- */
+
+    .header-heading{
+        margin: 0px 0px 0px 180px;
+    }
+    .upper-div{
+        flex-direction: column;
+        justify-content: center;
+        /* border: 2px solid greenyellow; */
+        margin: 0px 0px 0px 220px;
+    }
+    
+    .lower-div{
+        flex-direction: column;
+        margin: 0px 0px 0px 220px;
+    }
+
+    /* ----Footer----- */
+
+    .footer-heading{
+        margin: 0px 0px 0px 75px;
+    }
+
+    .social{
+        margin: 0px 0px 0px 150px;
+    }
+
+}
