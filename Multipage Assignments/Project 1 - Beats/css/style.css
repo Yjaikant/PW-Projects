@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #0f0f10;
+  color: white;
+}
+
+body {
+  padding: 0 15vh;
+}
+/* ---------------------------------------- */
+/* Navbar Starts */
+.navBar {
+  display: flex;
+  width: 100%;
+  /* border: 2px solid rgb(0, 242, 255); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+/* Nav Logo */
+.navBar img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Nav List */
+a {
+  text-decoration: none;
+}
+
+.rightNavbar {
+  display: flex;
+}
+.rightNavbar ul {
+  display: flex;
+  gap: 120px;
+  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.rightNavbar ul li {
+  font-weight: 700;
+  font-size: 14px;
+}
+/* Nav Button */
+.navBTN {
+  background: #1e1e21;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 8px 35px;
+}
+/* Navbar Ends */
+/* -------------------------------------- */
+/* Main Section starts here  */
+
+.mainSection {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative;
+
+}
+
+.mainImg {
+  width: 270px;
+  position: relative;
+  top: -250px;
+  left: 170px;
+}
+
+.heroSection {
+    margin-left: 280px;
+    width: 40%;
+
+}
+
+.heroImg {
+    width: 320px;
+    margin-left: 50px;
+}
+
+.heroSection h1 {
+    font-weight: 600;
+    font-size: 46px;
+    margin-bottom: 25px;
+  }
+  
+  .heroSection h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .heroSection p {
+    width: 65%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #bdc0c2;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .addtoBag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1e1e21;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 10px 25px;
+  }
+  
+  .addtoBag img {
+    width: 15px;
+    background-color: transparent;
+  }
+  
+  .addtoBag p {
+    margin-bottom: 0;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .addtoBag span {
+    background-color: transparent;
+  }
+
+  /*------------ E-Commerce Logo -----------*/
+
+  .eCommerce {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid yellow; */
+    padding: 20px 0;
+    position: relative;
+    top: -140px;
+    margin-bottom: 90px;
+  }
+
+  .eCommerce img{
+    cursor: pointer;
+  }
+
+  /* ---------------------------------------- */
+  /* ---Specification--- */
+  .specification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -180px;
+    height: 100%;
+  }
+
+  .specsHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        /* align-items: center; */
+    /* border: 2px solid rgb(140, 13, 237); */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .specsList{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(217, 121, 121); */
+    height: 100%;
+  }
+
+  .specsList div{
+    height: 100%;
+    margin: 40px 0 0 0;
+    line-height: 26px;
+    /* border: 2px solid rgb(253, 165, 3); */
+  }
+
+  .specsList div:first-child, .specsList div:last-child{
+    margin-left: 15px;
+    width: 60%;
+  }
+  .specsList h3{
+    font-weight: 300;
+  }
+  .specsList h4{
+    font-weight: 300;
+  }
+
+  .specsList p{
+    font-weight: 200;
+    font-size: 13px;
+  }
+
+  .specsList div:last-child p{
+    line-height: 20px;
+  }
+  .specsList div:last-child h3{
+    margin-bottom: 6px;
+  }
+
+  .specsList div:first-child, .specsList div:last-child {
+    /* border: 2px solid rgb(0, 191, 255); */
+    scale: 0.8;
+
+  }
+  .specsImg img{
+    /* border: 2px solid blue; */
+    width: 80%;
+    height:400px;
+  }
+/* ---------------------------------------- */
+/* Case Section Starts here */
+
+.caseSection{
+    text-align: center;
+}
+
+.mainCaseSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 90px;
+}
+
+.caseImg {
+    width: 24%;
+    margin:10px 90px 0 110px;
+}
+.caseImg img {
+    width: 100%;
+}
+
+.caseDescription {
+    width: 20%;
+    text-align: left;
+    font-weight: 200;
+
+}
+
+.caseInfo {
+    display: flex;
+    background: #1e1e21;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    width: 180px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.caseInfo img {
+    margin: 10px 30px 10px 14px;
+    background:transparent;
+}
+.caseInfo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    
+}
+
+/* ---Foldable Section--- */
+/* Left Fold */
+
+.foldSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background: #1e1e21;
+    border-radius: 20px;
+    padding: 60px 0;
+}
+
+.leftFold{
+    width: 15%;
+    margin: 0 50px 0 0;
+    background-color: transparent;
+}
+
+.leftFold h3 {
+    background-color: transparent;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.leftFold p {
+    background-color: transparent;
+    font-weight: 200;
+}
+
+.buyBtn{
+    background-color: black;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 8px 20px 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buyBtn img{
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.buyBtn p {
+    font-weight: 100;
+    
+}
+
+/* Right Fold */
+
+.rightFold{
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+.rightFold img {
+    background-color: transparent;
+    width: 110%;
+}
+
+/* ------------------------------------------ */
+
+/* Card Section */
+.styleSection {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.masterCard {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 100px;
+    
+}
+
+.styleCard {
+    background: #1e1e21;
+    border-radius: 18px;
+    height: 50%;
+}
+
+.styleCard > img {
+    width: 150px;
+    border-radius: 18px;
+    position: relative;
+    top: -80px;
+}
+
+.headParent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1e1e21;
+    border-radius: 18px;
+    margin-bottom: 150px;
+    position: relative;
+    top: -60px;
+
+
+}
+
+.headParent h4 {
+    font-weight: 500;
+    background: #1e1e21;
+
+}
+
+.headParent p {
+    font-weight: 200;
+    background: #1e1e21;
+
+}
+
+.bagDiv {
+    background-color: black;
+    width: 20%;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.bagDiv img {
+    background-color: black;
+}
+
+/* ---------------------------------------- */
+/* Footer Starts here.... */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    margin-top: -140px;
+    margin-bottom: 60px;
+}
+
+.beatLogo {
+    position: relative;
+    top: -40px;
+    left: -10px;
+}
+
+.products h4{
+    font-size:20px;
+    margin-bottom: 6px;
+}
+
+.products p {
+    font-weight: 200;
+}   
+
+.support h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+
+}
+
+.support p {
+    font-weight: 200;
+}
+
+.socialInput {
+}
+
+.socialInput input {
+    width: 390px;
+    padding: 10px 20px;
+    background: #1e1e21;
+    border-radius: 8px;
+    border: none;
+}
+
+.subsBtn {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    position: relative;
+    top: -35px;
+    left: 230px;
+    padding: 4px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.subsBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.socialIcons img {
+    margin-left: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
