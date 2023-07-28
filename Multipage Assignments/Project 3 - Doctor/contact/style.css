@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f5ff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar */
+nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav img {
+    width: 150px;
+    height: 50px;
+    padding: 0px;
+}
+
+nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #20bc7eff;
+}
+/* ---------------------------- */
+/* ---------------------------- */
+/* ------Contact Us Page----- */
+/* ---------------------------- */
+
+main{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+section {
+    /* border: 2px solid yellowgreen; */
+    height: 60vh;
+    width: 21vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.92) 0px 2px 16px 0px;
+    background-color: #f0f4f5
+
+}
+
+section:hover {
+    scale: 1.091;
+    transition: all ease 1s;
+}
+
+section h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    background-color: #f0f4f5
+
+}
+
+form {
+    font-family: 'Ubuntu', sans-serif;
+    width: 18vw;
+    margin: 10px;
+    background-color: #f0f4f5
+}
+
+form input {
+    width: 102%;
+    font-size: 16px;
+    padding: 2px 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+
+}
+
+form input:nth-child(11){
+    height: 16vh;
+}
+
+form textarea {
+    width: 102%;
+    padding: 2px 6px;
+    font-size: 16.5px;
+    background-color: #fff;
+    border:  none;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #20bc7eff;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    width: 102%;
+    font-size: 16.5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+label {
+    font-weight: 600;
+    background-color: #f0f4f5
+
+}

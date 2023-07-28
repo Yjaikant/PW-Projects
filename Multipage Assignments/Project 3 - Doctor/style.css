@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f5ff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar */
+nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav img {
+    width: 150px;
+    height: 50px;
+    padding: 0px;
+}
+
+nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #20bc7eff;
+}
+/* ---------------------------- */
+/* ---------------------------- */
+/* ------Main Landing Page----- */
+/* ---------------------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSection {
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+.leftSection img {
+    width: 25px;
+}
+
+.bottomAngle{
+    position: absolute;
+    left:45.5%;
+    bottom: 20%;
+}
+
+.mouse {
+    margin-top: 5%;
+}
+
+.bcgImg {
+    width: 39vw;
+    height: 75vh;
+    position: absolute;
+    background:transparent ;
+    left: 25%;
+}
+
+.leftSection h1 {
+    font-size: 60px;
+}
+
+.leftSection p {
+    color: #9a9b9bff;
+}
+
+.smallbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.smallbox button {
+    background-color: #22bc7eff;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.smallbox button:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.smallbox img {
+    width: 25px;
+}
+
+/* ----------------------------- */
+/* ------Right Section---------- */
+
+.rightSection {
+    width: 30%;
+}
+
+.rightSection img:nth-child(1){
+    /* green */
+    position: absolute;
+    width: 29.59%;
+    height: 60%;
+    right: 0;
+    bottom: 60px;
+    background: transparent;
+}
+.rightSection img:nth-child(2){
+    /* orange */
+    position: absolute;
+    right: 0;
+    width: 26.99%;
+    bottom: 0px;
+    right: 0px;
+    background: transparent;
+
+}
+.rightSection img:nth-child(3){
+    /* doctor */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 94%;
+    background: transparent;
+}
+
