@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text</title>
+</head>
+<body>
+    <h2 id="header" style="font-size: 50px;">The most affordable learning platform</h2>
+    <button id="toggleBTN" style="padding: 10px 20px;border-radius: 8px; font-weight: 600; font-size: 20px;">Click HERE!</button>
+</body>
+<script>
+    let headerText = document.getElementById("header");
+    let toggleButton = document.getElementById("toggleBTN")
+
+    toggleButton.addEventListener("click", changeTextNow)
+
+    function changeTextNow(){
+        headerText.innerText = "PW Skills"
+    }
+</script>
+</html>

@@ -7,9 +7,8 @@ function billSplitter(persons, ...args) {
     total = total + args[i];
   }
 
-  return `Total cost is ${total} and Each should pay ${Math.round(
-    total / this.persons
-  )}`;
+  return `Total cost is ${total} and Each should pay ${Math.round(total / this.persons)
+  }`;
 }
 
 let Input1 = billSplitter(4, 100, 200, 300, 400, 500);
