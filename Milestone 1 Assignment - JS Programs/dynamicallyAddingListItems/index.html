@@ -44,6 +44,7 @@
     addItemButton.addEventListener("click",() => {
         if(currentItem < arrItems.length){
         // Creating li tag with DOM
+        
         let newList = document.createElement("li");
         newList.textContent = arrItems[currentItem];
         listItem.appendChild(newList);
