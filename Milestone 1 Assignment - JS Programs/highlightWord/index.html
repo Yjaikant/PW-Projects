@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighting Word</title>
+</head>
+<style>
+    p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        padding: 50px;
+    }
+</style>
+<body>
+    <p id="paragraph">
+        Hi, I am Jai Kant Yadav pursuing a course on PW Labs of Full Stack Developer.Full stack development is the process of designing, creating, testing, and deploying a complete web application from start to finish. It involves working with various technologies and tools, including front-end web development, back-end web development, and database development. And full stack development is a term used to describe a software engineer or developer who works with both the front and back end of a website or application. A full-stack developer is comfortable working with front-end and back-end technologies that power a website or application. 
+
+        Full-stack developers are often responsible for the entire web application development process, from start to finish, which means they must have a strong understanding of all the technologies and tools involved in web development. They also need to work effectively with others on a team, as web development is typically a collaborative process. Most full-stack developers have a firm foundation in web development technologies, such as HTML, CSS, and JavaScript. They also have experience with server-side technologies such as PHP, Ruby on Rails, and Node.js. In addition to their technical skills, full-stack developers also deeply understand how the various parts of a website or application work together. 
+        
+        Full-stack developers are in high demand because they can build a website or application from start to finish and quickly identify and fix any problems that may arise. If you're looking to hire a full-stack developer, ask about their experience with front-end and back-end technologies Thank for your reading and time.
+    </p>
+    <script>
+        let para = document.getElementById("paragraph");
+        // Lets make an array with split(" ");
+        let paraArray = para.innerText.split(" ");
+        // It will give an array : ['Hi,', 'I', 'am', 'Jai', 'Kant', 'Yadav', 'pursuing', 'a', 'course', 'on', 'PW', 'Labs', 'of', 'Full', 'Stack', 'Developer.', 'Right', 'now', 'I', 'am', 'doing', 'an', 'Milestone', 'Assignment', 'in', 'which', 'I', 'have', 'to', 'highlight', 'words', 'which', 'are', 'greater', 'than', '8', 'in', 'length.', 'Lorem', 'ipsum', 'dolor,', 'sit', 'amet', 'consectetur', 'adipisicing', 'elit.', 'Eum', 'vitae', 'necessitatibus', 'tempora', 'distinctio', 'quos', 'neque', 'aperiam', 'optio,', 'ratione', 'atque', 'dicta', 'ex', 'iusto', 'quibusdam.', 'Ullam', 'animi', 'repellat', 'accusantium', 'magni!', 'Earum', 'suscipit', 'nesciunt', 'architecto?', 'Soluta', 'veritatis', 'voluptatibus', 'obcaecati', 'at,', 'possimus', 'rem', 'doloremque', 'modi', 'sequi', 'quod', 'molestiae', 'quibusdam', 'quos', 'aliquid', 'facilis,', 'deserunt', 'architecto.', 'Thank', 'for', 'your', 'reading', 'and', 'time.']
+        for(let i = 0; i <paraArray.length; i++){
+            if(paraArray[i].length > 8){
+                let spanTag = document.createElement("span")
+                spanTag.innerText = paraArray[i];
+                spanTag.style.backgroundColor="yellow";
+                // This will make : <span style="background-color: yellow;">word</span>
+                // Replacing paraArray words with span
+                para.innerHTML = para.innerHTML.replace(paraArray[i],spanTag.outerHTML)
+
+                //spanTag.innerHTML will only target word inside spanTag
+                // spanTag.outerHTML will target outer html content with style: bch color "yellow"
+            }
+        }
+        
+    </script>
+</body>
+</html>
