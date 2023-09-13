@@ -1,3 +1,4 @@
+// JavaScript Program for Generating Random Numbers //
 
 let delay = 3;
 // Message that displays total seconds in delay //

@@ -1,3 +1,5 @@
+// JavaScript Program for Exchanging the Rate of US dollars to INR //
+
 let exchangeRate = 80 ;//DEFINING THE EXCHANGE RATE//
 //CREATING THE CART OBJECT
 let cart = {
