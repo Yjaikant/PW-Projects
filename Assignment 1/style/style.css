@@ -92,6 +92,8 @@ a {
 
 .main-section button:hover{
     font-size: 30px;
+    transition: all ease-in-out 0.5s;
+
 }
 
 .main-section img{
