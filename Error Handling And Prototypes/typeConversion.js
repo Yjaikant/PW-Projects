@@ -1,7 +1,7 @@
 // JavaScript Program for Type conversion //
-function convertToNumber(str){
+function convertToNumber(num){
     try{
-        let num = Number(str);
+        // "isNaN" FIRST FORCES STRING TO BE A NUMBER AND GIVES TRUE RESULT ELSE GIVES FALSE IF A STRING IS NOT ABLE TO CONVERT INTO A NUMBER!
         if(isNaN(num)){
             throw new Error("Invalid Number");//"THROW" STATEMENT STATES USER DEFINED EXCEPTION. EXECUTION OF FUNCTION WILL STOP AND THE ACTION WILL BE PASSED ON FIRST CATCH! 
         }
