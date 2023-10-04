@@ -36,5 +36,5 @@ console.log(user.getPassword())
 user.setPassword("234")
 console.log(user.getPassword())
 
-user.setPassword("12Pasword")
+user.setPassword("12Pasword213123123")
 console.log(user.getPassword());
