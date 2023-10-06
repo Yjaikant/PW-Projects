@@ -13,9 +13,9 @@ function GreetingPromise(name) {
         }
       }, 1000);
     });
-  }
+  } 
   
-  // DEFINING TWO VARIABLES THAT EXPLAINS THEN OR CATCH METHODS FOR PROMISE ON RESOLVING OR REJECTION.
+  // DEFINING TWO VARIABLES WITH ARROW FUNCTIONS THAT EXPLAINS THEN OR CATCH METHODS FOR PROMISE ON RESOLVING OR REJECTION.
   let onSuccess = (result) => {
     console.log(result);
   };
@@ -28,4 +28,4 @@ function GreetingPromise(name) {
   GreetingPromise("Jai Kant").then(onSuccess).catch(onFailed);
   GreetingPromise().then(onSuccess).catch(onFailed);
   // EXPECTED OUTPUT
-  // HELLO, JAIKANT!
+  // HELLO, JAI KANT!
