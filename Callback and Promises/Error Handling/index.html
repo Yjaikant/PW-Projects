@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch API Error Handling</title>
+</head>
+<body>
+  <h1>Fetch API Error Handling</h1>
+  <div id="result"></div>
+<!-- JS Code starts here! -->
+  <script>
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts/123456789'; // Simulating an invalid API endpoint
+
+    fetch(apiUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Handle successful data retrieval here
+        document.getElementById('result').textContent = `Title: ${data.title}`;
+      })
+      .catch(error => {
+        // Handle errors here
+        document.getElementById('result').textContent = `Error: ${error.message}`;
+      });
+  </script>
+</body>
+</html>
